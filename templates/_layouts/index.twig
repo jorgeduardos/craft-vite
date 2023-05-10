@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ craft.app.language | slice(0, 2) }}" class="no-js">
+	<head>
+
+		<title>Document</title>
+		{% set headFiles = [
+      'meta',
+      'css',
+      'js',
+    ] %}
+		{% for file in headFiles %}
+			{% include "_partials/_head/" ~ file %}
+		{% endfor %}
+
+		{{ craft.vite.script('src/js/app.js') }}
+	</head>
+	<body class="{{ bodyClass is defined ? bodyClass : 'default' }} ltr">
+		<div id="container"> 
+      {% block content %}
+      {% endblock %}
+		</div>
+		</body>
+	</html>

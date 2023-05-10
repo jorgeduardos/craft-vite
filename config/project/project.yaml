@@ -1,0 +1,27 @@
+dateModified: 1683643204
+email:
+  fromEmail: anuar@hey.com
+  fromName: 'Craft Vite'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    3af7b918-37f7-424a-9d25-e22b0678a37c: Common # Common
+    6ae3ed1d-1645-456b-96b8-289a6a3e4c9d: 'Craft Vite' # Craft Vite
+    b2ee1a5b-86a0-4216-9ff3-857313bbe512: 'Craft Vite' # Craft Vite
+plugins:
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: 'Craft Vite'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
