@@ -30,6 +30,7 @@ return GeneralConfig::create()
     ->restoreCommand(App::env('CRAFT_ENVIRONMENT') === 'dev' ? App::env('RESTORE_COMMAND') : false)
 
     ->aliases([
+        '@webroot' => App::env('WEBROOT'),
         '@web' => App::env('PRIMARY_SITE_URL'),
         '@viteAssetsUrl' => App::env('VITE_ASSETS_URL'),
     ])
